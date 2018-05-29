@@ -18,7 +18,10 @@ import {ListagemComponent} from './listagem/listagem.component';
 //Importando nossas rotas
 import {routing} from './app.routes';
 //usando o modulo de forms apra que o angular reconheça ngModel
-import { FormsModule } from '@angular/forms';
+//Importando o reactiveFormModule, ele permite fazer validação ao lado do modelo
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 //Importando modulo rxjs
 import 'rxjs/add/operator/map'
 
@@ -31,7 +34,8 @@ import 'rxjs/add/operator/map'
         HttpModule, 
         PainelModule,
         routing,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
     ], 
     declarations: [
         AppComponent, 
